@@ -62,7 +62,7 @@ if (checkDeobfs(deobfuscated)) {
     assert(keys.length == 2, "Invalid array length!")
 
     // Be happy!
-    console.info("Success!")
+    console.info("Success!   "+ keys)
     await writeFile("keys.json", JSON.stringify(keys), "utf8")
 } else {
     // ... Or not xD
